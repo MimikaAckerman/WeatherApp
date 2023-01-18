@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('https://i.pinimg.com/564x/a2/b1/62/a2b162bffaa8c8a60509de4288e04bac.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+.card{
+    background: #eaeaea ;
+    
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.search-bar{
+    border:none;
+    outline: none;
+    border-radius: 24px;
+    height: 50px;
+    width: 30vh;
+    background: grey;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+}
+.button-search{
+    border-radius: 100%;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    content: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
